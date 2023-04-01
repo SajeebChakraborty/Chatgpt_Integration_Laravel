@@ -16,9 +16,11 @@ class ChatController extends Controller
             'prompt' => $request->input('message'),
         ]);
 
+        $question = $request->input('message');
+
         $output= $result['choices'][0]['text'];
 
-        return view('welcome', ['output' => $output]);
+        return view('welcome', ['output' => $output, 'question' => $question]);
 
 
     }
