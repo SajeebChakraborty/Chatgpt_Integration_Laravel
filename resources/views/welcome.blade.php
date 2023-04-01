@@ -61,6 +61,7 @@
                     </ul>
                 </div>
                 <form method="post" action="/chat">
+                    
                     @csrf
                     <div class="chat-message clearfix">
                         <div class="input-group mb-0">
