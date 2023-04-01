@@ -73,8 +73,9 @@
                             </div>
                             <input type="text" class="form-control" name="message" placeholder="Enter text here...">                                  
                         </div>
-                    </div>
                     
+                    </div>
+
                 </form>
             </div>
         </div>
