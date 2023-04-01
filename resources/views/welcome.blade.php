@@ -7,7 +7,7 @@
 
 <div class="container">
 
-<div class="row clearfix">
+    <div class="row clearfix">
 
             <div class="header">
 
