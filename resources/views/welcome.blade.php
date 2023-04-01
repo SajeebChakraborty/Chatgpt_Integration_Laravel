@@ -9,6 +9,7 @@
 <div class="row clearfix">
 
             <div class="header">
+                
                 <h2 style="font-size:40px !important; text-align:center; margin-bottom:40px;"><strong>Artifical </strong> Chat App</h2>
                 
             </div>
@@ -34,7 +35,7 @@
                 </div>
                 <div class="chat-history">
                     <ul class="m-b-0">
-                        
+
                         <li class="clearfix">
                             <div class="message-data text-right">
 
