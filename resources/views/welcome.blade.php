@@ -52,7 +52,6 @@
 
                             <div class="message other-message float-right"> Please ask me ... </div>
 
-
                             @endif
 
                         </li>
