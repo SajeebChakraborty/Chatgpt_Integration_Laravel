@@ -38,7 +38,7 @@
                             <div class="message-data text-right">
 
                                 <img src="https://bootdey.com/img/Content/avatar/avatar7.png" alt="avatar">
-                                
+
                             </div>
 
                             @if(isset($output))
@@ -52,7 +52,7 @@
 
                             @else
 
-                            <div class="message other-message float-right"> Please ask me ... </div>
+                                <div class="message other-message float-right"> Please ask me ... </div>
 
                             @endif
 
