@@ -67,13 +67,14 @@
                     <div class="chat-message clearfix">
 
                         <div class="input-group mb-0">
-                            
+
                             <div class="input-group-prepend">
                             <button type="submit"> <span class="input-group-text" style="border:none !important;"><i class="fa fa-send"></i></span> </button>  
                             </div>
                             <input type="text" class="form-control" name="message" placeholder="Enter text here...">                                  
                         </div>
                     </div>
+                    
                 </form>
             </div>
         </div>
