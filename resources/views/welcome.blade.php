@@ -6,10 +6,11 @@
 <link rel="stylesheet" href="{{ asset('assets/css/style.css') }}">
 
 <div class="container">
+
 <div class="row clearfix">
 
             <div class="header">
-                
+
                 <h2 style="font-size:40px !important; text-align:center; margin-bottom:40px;"><strong>Artifical </strong> Chat App</h2>
                 
             </div>
