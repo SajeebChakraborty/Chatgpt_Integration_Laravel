@@ -3,34 +3,24 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use GuzzleHttp\Client;
+use OpenAI\Laravel\Facades\OpenAI;
 
 class ChatController extends Controller
 {
     
     public function handleChat(Request $request)
     {
-        $client = new Client([
-            'base_uri' => 'https://api.openai.com',
-            'headers' => [
-                'Content-Type' => 'application/json',
-                'Authorization' => 'Bearer ' . env('CHATGPT_API_KEY')
-            ]
+
+        $result = OpenAI::completions()->create([
+            'model' => 'text-davinci-003',
+            'prompt' => $request->input('message'),
         ]);
 
-        $response = $client->request('POST', '/v1/engines/davinci-codex/completions', [
-            'json' => [
-                'prompt' => $request->input('message'),
-                'max_tokens' => 100,
-                'temperature' => 0.5,
-                'n' => 1,
-                'stop' => ['\n']
-            ]
-        ]);
+        $output= $result['choices'][0]['text'];
 
-        $responseData = json_decode($response->getBody(), true);
+        return view('welcome', ['output' => $output]);
 
-        return response()->json(['message' => $responseData['choices'][0]['text']]);
+
     }
 
 }
