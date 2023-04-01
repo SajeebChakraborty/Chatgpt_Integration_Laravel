@@ -34,6 +34,7 @@
                 </div>
                 <div class="chat-history">
                     <ul class="m-b-0">
+                        
                         <li class="clearfix">
                             <div class="message-data text-right">
 
@@ -79,7 +80,7 @@
 
                 </form>
             </div>
-            
+
         </div>
     </div>
 </div>
