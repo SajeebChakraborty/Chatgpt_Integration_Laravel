@@ -14,6 +14,8 @@ class ChatController extends Controller
         $result = OpenAI::completions()->create([
             'model' => 'text-davinci-003',
             'prompt' => $request->input('message'),
+            "max_tokens" => 1000,
+            "temperature" => 0.5,
         ]);
 
         $question = $request->input('message');

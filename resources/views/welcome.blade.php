@@ -41,9 +41,12 @@
 
                             @if(isset($output))
 
-                                <div class="message other-message float-left"> {{ $question }} </div>
+                                <div class="message other-message float-left"> <b>Question : </b> {{ $question }} </div>
 
-                                <div class="message other-message float-right"> {{ $output }} </div>
+                                <br>
+                                <br>
+
+                                <div class="message other-message float-right">  <b>Reply : </b> {{ $output }} </div>
 
                             @else
 
